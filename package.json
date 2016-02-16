@@ -1,27 +1,27 @@
 {
-  "name": "electron-quick-start",
-  "version": "1.0.0",
-  "description": "A minimal Electron application",
+  "name": "micro_programmer",
+  "version": "0.0.1",
+  "description": "μProgrammer is an experimental cross-platform GUI for programming MCUs. Built with Electron.",
   "main": "main.js",
   "scripts": {
     "start": "electron main.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/atom/electron-quick-start.git"
+    "url": "git+https://github.com/beriberikix/micro_programmer.git"
   },
   "keywords": [
     "Electron",
-    "quick",
-    "start",
-    "tutorial"
+    "serial",
+    "mcu",
+    "Programmer"
   ],
-  "author": "GitHub",
-  "license": "CC0-1.0",
+  "author": "beriberikix",
+  "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/atom/electron-quick-start/issues"
+    "url": "https://github.com/beriberikix/micro_programmer/issues"
   },
-  "homepage": "https://github.com/atom/electron-quick-start#readme",
+  "homepage": "https://github.com/beriberikix/micro_programmer#readme",
   "devDependencies": {
     "electron-prebuilt": "^0.36.0"
   }

@@ -11,6 +11,8 @@ const BrowserWindow = electron.BrowserWindow;
 let mainWindow;
 
 function createWindow () {
+  const SerialPort = require('serialport');
+
   // Create the browser window.
   mainWindow = new BrowserWindow({width: 800, height: 600});
 
@@ -19,6 +21,15 @@ function createWindow () {
 
   // Open the DevTools.
   mainWindow.webContents.openDevTools();
+
+  SerialPort.list(function (err, ports) {
+    // output ports to node console
+    ports.forEach(function(port) {
+      console.log(port.comName);
+      console.log(port.pnpId);
+      console.log(port.manufacturer);
+    });
+  });
 
   // Emitted when the window is closed.
   mainWindow.on('closed', function() {

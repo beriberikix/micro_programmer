@@ -31,6 +31,11 @@ function createWindow () {
     });
   });
 
+  // ah, when the window is nice and loaded
+  mainWindow.webContents.on('did-finish-load', function() {
+    mainWindow.webContents.send('ping', 'whoooooooh!');
+  });
+
   // Emitted when the window is closed.
   mainWindow.on('closed', function() {
     // Dereference the window object, usually you would store windows
